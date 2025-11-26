@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 350 30% 12%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 350 30% 12%;
+
+  /* Primario granate */
+  --primary: 350 65% 32%; /* #7f1d1d */
+  --primary-foreground: 0 0% 98%; /* blanco suave */
+
+  /* Secundario en tono vino suave */
+  --secondary: 350 40% 92%; /* rosado claro */
+  --secondary-foreground: 350 35% 20%;
+
+  /* Muted en tonos rosados apagados */
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+
+  /* Accent vino brillante */
+  --accent: 350 55% 88%;
+  --accent-foreground: 350 50% 20%;
+
+  /* Destructive en rojo granate brillante */
+  --destructive: 350 70% 40%;
+  --destructive-foreground: 0 0% 98%;
+
+  /* Bordes en granate apagado oscuro */
+  --border: 350 25% 85%;
+  --input: 350 25% 85%;
+
+  /* Ring en rojo vino destacado */
+  --ring: 350 65% 32%;
+
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+  --primary: 217.2 91.2% 59.8%;
+  --primary-foreground: 222.2 47.4% 11.2%;
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 224.3 76.3% 48%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: system-ui, -apple-system, sans-serif;
+}
